@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2A2A2E;
+    color: white;
+    font-family: 'Acme', sans-serif;
+}
+
+a {
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #92B8D1
+}
+
+img {
+    width: 100%;
+}
+
+/***************************
+BUTTONS
+***************************/
+.btn {
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    opacity: 1;
+  }
+
+.btn-50 {
+    width: 50%;
+    border-radius: 0;   
+}
+
+.btn-primary {
+    background-color: #000000;
+}
+
+.btn-secondary {
+    background-color: #484549;
+}
+
+.btn-submit {
+    width: 50%;
+    border-radius: 5px;  
+    text-transform: uppercase;
+}
+
+.btn-resume {
+    opacity: 0.8;
+    cursor: pointer;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 2.8;
+    padding: 0 1rem;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background-color:#fff;
+    color:#212121;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1),0 4px 8px rgba(0,0,0,.3);
+}
+
+.btn-resume:hover {
+    opacity: 1;
+}
+
+/***************************
+HERO  
+***************************/
+.background-img {
+    position: relative;
+    background-image:  url("../img/pink\ pape.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.large {
+    position: relative;
+}
+
+.large-inner {
+    padding-top: 2em;
+}
+
+.large-inner_heading {
+    margin-bottom: 1rem;
+}
+
+.name {
+    margin-bottom: 1.25rem;
+    color: #617266;
+    letter-spacing: 2px;
+    font-size: 70px;
+}
+
+.description {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.line {
+    color: #617266;
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+}
+
+/***************************
+INFO CONNECT 
+***************************/
+.info-heading {
+    line-height: 30px;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: 500; 
+}
+
+.info-connect {
+    padding: 2rem;
+}
+
+.info-connect_heading {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 1rem;
+}
+
+.info-connect_heading > li {
+    margin-top: .5rem;
+}
+
+.info-connect_social {
+    margin-top: 1rem;
+}
+
+.linkedin,
+.github,
+.phone,
+.mail,
+.resume {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.linkedin,
+.phone,
+.mail,
+.github,
+.resume {
+    color: #505357;;
+    margin-left: 1rem;
+    font-size: 24px;
+}
+
+.fa-file,
+.fa-github, 
+.fa-linkedin,
+.fa-envelope,
+.fa-phone-square-alt {
+    line-height: 36px;
+}
+
+.info-phone,
+.info-email {
+    display: inline-block;
+    min-width: 60px;
+}
+
+/***************************
+ABOUT 
+***************************/
+.about {
+    background-color:#F8FAFA;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.about-heading {
+    font-size: 3.25em;
+    color: #505357;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.about-img {
+    max-width: 25em;
+    background-color: #2A2A2E;
+    border-radius: 10px;
+    border-top: 10px solid #617266;
+    box-shadow: 0 4px 8px 0
+    rgba(0,0,0,0.2);
+}
+
+.dark-text {
+    color: #2A2A2E;
+    margin-top: 1rem;
+}
+
+/***************************
+MEDIA QUERIES
+***************************/
+@media screen and (min-width: 680px) {
+    .info-connect {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+
+    .info-connect_social {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 920px) {
+    .line {
+        margin: 3rem 0 3rem 0;
+    }
+    
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-right {
+        margin-top: 3rem;
+        max-width: 600px;
+        margin-left: 1rem;
+    }
+
+    .about-left {
+        margin-top: 4rem;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .info-heading {
+        font-size: 20px;
+    }
+
+    .about-left {
+        margin-top: 1rem;
+    }
+}
